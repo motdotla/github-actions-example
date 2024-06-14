@@ -8,6 +8,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
+    - run: echo "hi"
     - run: curl -fsS https://dotenvx.sh/install.sh | sh
     - run: dotenvx run -- node build.js
       env:
